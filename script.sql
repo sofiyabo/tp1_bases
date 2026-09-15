@@ -81,7 +81,7 @@ CREATE TABLE PedidoTelefonico (
 -- PedidoMesa: depende de Pedido y Reserva 
 CREATE TABLE PedidoMesa (
     id_pedido   INTEGER PRIMARY KEY,
-    id_reserva  INTEGER NOT NULL,
+    id_reserva  INTEGER NOT NULL UNIQUE,
     FOREIGN KEY (id_pedido) REFERENCES Pedido(id_pedido) ON DELETE CASCADE,
     FOREIGN KEY (id_reserva) REFERENCES Reserva(id_reserva)
 );
