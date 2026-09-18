@@ -10,12 +10,8 @@ todas las tablas definidas en script.sql.
 Uso:
     python3 generar_datos.py                          # genera carga_datos.sql
     python3 generar_datos.py salida.sql               # nombre de archivo alternativo
-    python3 generar_datos.py --reservas 20            # exactamente 20 reservas
-    python3 generar_datos.py prueba.sql --reservas 5  # combinando ambas opciones
 
-Sin --reservas, la cantidad de reservas depende del día y del turno (~1800).
-Fijar un número chico es útil para depurar: se generan menos pedidos de mesa
-y el archivo resultante es más fácil de revisar.
+
 
 La cantidad de pedidos telefónicos y por aplicación se configura con las
 variables CANT_PEDIDOS_TELEFONICOS y CANT_PEDIDOS_APLICACION (ver más abajo).
